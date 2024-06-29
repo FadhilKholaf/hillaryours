@@ -1,33 +1,115 @@
+/* GOOGLE FONT IMPORT */
+
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+/* TAILWIND IMPORT */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* TEXT DECORATION */
+
+.text-decoration-thickness {
+  text-decoration-thickness: 0.25rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.text-shadow-cream {
+  text-shadow:
+    -1px -1px 0 #f8f5ec,
+    1px -1px 0 #f8f5ec,
+    1px 3px 0 #f8f5ec,
+    3px 3px 0 #f8f5ec;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.text-shadow-cream-sm {
+  text-shadow:
+    -0.5px -0.5px 0 #f8f5ec,
+    0.5px -0.5px 0 #f8f5ec,
+    0.5px 0.5px 0 #f8f5ec,
+    0.5px 0.5px 0 #f8f5ec;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.text-shadow-lavender {
+  text-shadow:
+    -1px -1px 0 #564b74,
+    1px -1px 0 #564b74,
+    1px 3px 0 #564b74,
+    3px 3px 0 #564b74;
+}
+
+.text-shadow-lavender-sm {
+  text-shadow:
+    -0.5px -0.5px 0 #564b74,
+    0.5px -0.5px 0 #564b74,
+    0.5px 0.5px 0 #564b74,
+    0.5px 0.5px 0 #564b74;
+}
+
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* LENIS CSS */
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* SCROLL BEHAVIOR */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f5ec;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #564b74;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #564b74 #f8f5ec;
+}
+
+/* TEXT SELECTION */
+
+::-moz-selection {
+  color: #564b74;
+  background: #f8f5ec;
+}
+
+::selection {
+  color: #564b74;
+  background: #f8f5ec;
 }
