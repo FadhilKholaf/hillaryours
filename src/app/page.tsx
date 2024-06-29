@@ -16,9 +16,9 @@ export default function page() {
     <>
       <main
         className={cn(
-          "fixed top-0 z-[60] flex h-screen w-screen items-center justify-center gap-4 bg-primary-cream text-lg text-primary-lavender transition-all duration-500 ease-out-circle sm:text-3xl",
+          "fixed top-0 z-[60] flex h-screen w-screen items-center justify-center gap-4 bg-primary-cream text-lg text-primary-lavender transition-all duration-500 ease-in sm:text-3xl",
           {
-            "-top-full": !loading,
+            "-top-[200%]": !loading,
           },
         )}
       >
