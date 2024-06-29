@@ -19,6 +19,7 @@ export default function AnimatedLink({
     setClicked(!clicked);
     setTimeout(() => {
       window.location.href = href;
+      setClicked(false);
     }, 1000);
   };
 
@@ -26,7 +27,7 @@ export default function AnimatedLink({
     <>
       <section
         className={cn(
-          "fixed -top-[200%] left-0 z-50 flex h-screen w-screen items-center justify-center gap-4 bg-primary-cream text-lg text-primary-lavender transition-all duration-[0.75s] ease-out sm:text-3xl",
+          "fixed -top-[200%] left-0 z-50 flex h-screen w-screen items-center justify-center gap-4 bg-primary-cream text-lg text-primary-lavender transition-all duration-[0.75s] ease-out-circle sm:text-3xl",
           { "top-0": clicked },
         )}
       >
