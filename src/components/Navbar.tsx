@@ -58,7 +58,7 @@ export default function Navbar() {
       </div>
       <div
         className={cn(
-          "fixed -top-full z-40 h-[80vh] w-full rounded-b-[75%] bg-primary-cream px-[15vw] py-20 transition-all duration-500 ease-out-circle",
+          "fixed -top-full z-40 h-[80vh] w-full rounded-b-[75%] bg-primary-cream px-[10vw] py-20 transition-all duration-500 ease-out-circle",
           {
             "top-0 rounded-none": active,
           },
